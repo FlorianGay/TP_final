@@ -3,27 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/header.css" />
-    <link rel="stylesheet" href="./assets/styles/footer.css" />
-    <link rel="stylesheet" href="./assets/styles/galery.css" />
+    <link rel="stylesheet" href="../assets/styles/header.css" />
+    <link rel="stylesheet" href="../assets/styles/footer.css" />
+    <link rel="stylesheet" href="../assets/styles/galery.css" />
+    <script src="../assets/script/resize-galery.js"></script>
+    <script src="../assets/script/main-galery.js"></script>
     <title>Sofia Rodriguez | Globe-trotteuse</title>
 </head>
 <body>
     <header>
         <div class="header-title">
-            <span>Sofia Rodriguez</span>
+            <h1>Sofia Rodriguez</h1>
         </div>
         <nav class="header-nav">
             <ul class="nav-list">
-                <li class="nav-elmt"><a href="./index.html">Acceuil</a></li>
-                <li class="nav-elmt"><a href="./pages/galery.html">Gallerie</a></li>
-                <li class="nav-elmt"><a href="./pages/contact.html">Me contacter</a></li>
+                <li class="nav-elmt"><a href="../index.html">Acceuil</a></li>
+                <li class="nav-elmt"><a href="./galery.html">Gallerie</a></li>
+                <li class="nav-elmt"><a href="./contact.html">Me contacter</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
+        <section id="galery">
+            <p id="title-galery">
+                Mes derniers posts
+            </p>
+            <ul id="galery-contain">
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/versaille.jpg" alt="Château de Versailles"/>
+                        <figcaption class="title-topic">Palais de Versailles</figcaption>
+                        <p class="date-topic">2012-08-15</p>
+                    </figure>
+                    <p class ="topic-text">
+                        Le Château de Versailles, situé à Versailles, dans les Yvelines en France, est l'un des monuments les plus célèbres du monde. Il a été le siège du pouvoir de la monarchie française aux XVIIe et XVIIIe siècles.
+                    </p>
+                    <p class="topic-story">
+                        Le château a été construit par Louis XIII au XVIIe siècle et agrandi par son fils Louis XIV, qui a transformé le château en un symbole de grandeur et de pouvoir absolu. Il est célèbre pour ses magnifiques jardins, ses salles de réception somptueuses et sa célèbre galerie des Glaces.
+                    </p>
+                </li>
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/machu_pichu.jpg" alt="Machu Picchu"/>
+                        <figcaption class="title-topic">Cité perdue des Incas</figcaption>
+                        <p class="date-topic">2015-06-23</p>
+                    </figure>
+                    <p class ="topic-text">
+                        Machu Picchu est une ancienne cité inca perchée dans les montagnes des Andes au Pérou. Elle est connue pour ses impressionnantes structures en pierre et ses vues spectaculaires.
+                    </p>
+                    <p class="topic-story">
+                        Construit au XVème siècle et abandonné peu de temps après, Machu Picchu a été redécouvert par l'archéologue américain Hiram Bingham en 1911. Il est devenu l'une des destinations touristiques les plus populaires au monde.
+                    </p>
+                </li>
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/taj_mahal.jpg" alt="Taj Mahal"/>
+                        <figcaption class="title-topic">Symbole d'amour éternel</figcaption>
+                        <p class="date-topic">2013-11-10</p>
+                    </figure>
+                    <p class ="topic-text">
+                        Le Taj Mahal est un mausolée en marbre blanc situé à Agra, en Inde. Il a été construit par l'empereur moghol Shah Jahan en mémoire de son épouse bien-aimée, Mumtaz Mahal.
+                    </p>
+                    <p class="topic-story">
+                        La construction du Taj Mahal a commencé en 1632 et s'est achevée en 1653. Il est célèbre pour son architecture élégante, ses jardins luxuriants et sa signification romantique.
+                    </p>
+                </li>
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/muraille_chine.jpg" alt="Grande Muraille de Chine"/>
+                        <figcaption class="title-topic">Barrière protectrice millénaire</figcaption>
+                        <p class="date-topic">2016-04-17</p>
+                    </figure>
+                    <p class ="topic-text">
+                        La Grande Muraille de Chine est une série de fortifications construites pour protéger les frontières nord de la Chine contre les invasions des peuples nomades.
+                    </p>
+                    <p class="topic-story">
+                        La construction de la Grande Muraille a commencé au 7ème siècle avant J.-C. et s'est poursuivie jusqu'au 17ème siècle. Elle s'étend sur plus de 21 000 kilomètres à travers les paysages variés de la Chine.
+                    </p>
+                </li>
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/pyramide.jpg" alt="Pyramides de Gizeh"/>
+                        <figcaption class="title-topic">Trésors de l'Égypte ancienne</figcaption>
+                        <p class="date-topic">2014-09-08</p>
+                    </figure>
+                    <p class ="topic-text">
+                        Les Pyramides de Gizeh sont l'une des sept merveilles du monde antique et l'une des attractions touristiques les plus célèbres d'Égypte.
+                    </p>
+                    <p class="topic-story">
+                        Construites il y a plus de 4 500 ans, les pyramides servaient de tombeaux pour les pharaons de l'Égypte ancienne. Elles témoignent de la puissance et de la grandeur de la civilisation égyptienne.
+                    </p>
+                </li>
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/colisee.jpg" alt="Colisée de Rome"/>
+                        <figcaption class="title-topic">Amphithéâtre antique</figcaption>
+                        <p class="date-topic">2011-07-30</p>
+                    </figure>
+                    <p class ="topic-text">
+                        Le Colisée est un amphithéâtre romain situé au cœur de Rome, en Italie. Il est considéré comme l'un des plus grands symboles de l'architecture romaine.
+                    </p>
+                    <p class="topic-story">
+                        Construit au 1er siècle après J.-C., le Colisée était utilisé pour les combats de gladiateurs, les spectacles publics et les événements sportifs. Il pouvait accueillir jusqu'à 80 000 spectateurs.
+                    </p>
+                </li>
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/new_york.jpg" alt="Statue de la Liberté"/>
+                        <figcaption class="title-topic">Symbole de liberté</figcaption>
+                        <p class="date-topic">2018-10-05</p>
+                    </figure>
+                    <p class ="topic-text">
+                        La Statue de la Liberté est une sculpture monumentale située sur l'île de Liberty Island, à New York. Elle a été un cadeau du peuple français aux États-Unis en 1886.
+                    </p>
+                    <p class="topic-story">
+                        Conçue par le sculpteur français Frédéric Auguste Bartholdi, la statue représente la liberté et l'émancipation. Elle est devenue l'un des symboles les plus emblématiques de la liberté et de la démocratie.
+                    </p>
+                </li>
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/tour_effeil.jpg" alt=" Tour Eiffel"/>
+                        <figcaption class="title-topic">Symbole emblématique de Paris</figcaption>
+                        <p class="date-topic">2019-08-20</p>
+                    </figure>
+                    <p class ="topic-text">
+                        La Tour Eiffel est une célèbre tour de fer située à Paris, en France. Elle est l'un des monuments les plus visités au monde, attirant des millions de touristes chaque année.
+                    </p>
+                    <p class="topic-story">
+                        Conçue par l'ingénieur Gustave Eiffel, la tour a été achevée en 1889 pour l'Exposition universelle de Paris. À l'époque, elle était critiquée mais est devenue depuis un symbole emblématique de Paris et de la France.
+                    </p>
+                </li>
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/vatican.jpg" alt="Vatican"/>
+                        <figcaption class="title-topic">Siège de l'Église catholique</figcaption>
+                        <p class="date-topic">2013-10-12</p>
+                    </figure>
+                    <p class ="topic-text">
+                        Le Vatican est la plus petite ville-État indépendante du monde et le siège de l'Église catholique. Il abrite la Basilique Saint-Pierre et la Chapelle Sixtine, célèbres pour leurs œuvres d'art.
+                    </p>
+                    <p class="topic-story">
+                        Fondé au VIIIe siècle, le Vatican est le centre de l'Église catholique romaine. Il est également connu pour ses musées riches en trésors artistiques et historiques.
+                    </p>
+                </li>
+                <li class="topic">
+                    <figure>
+                        <img src="../assets/image/yellowstone.jpg" alt="Parc national de Yellowstone"/>
+                        <figcaption class="title-topic">Merveilles naturelles</figcaption>
+                        <p class="date-topic">2016-09-30</p>
+                    </figure>
+                    <p class ="topic-text">
+                        Le parc national de Yellowstone est le premier parc national au monde, situé principalement dans l'État américain du Wyoming. Il est renommé pour ses geysers, ses sources chaudes, et sa faune sauvage.
+                    </p>
+                    <p class="topic-story">
+                        Créé en 1872, Yellowstone est l'un des écosystèmes les plus diversifiés et préservés de la planète. Il abrite des animaux emblématiques tels que les bisons, les élans, et les grizzlis, ainsi que des phénomènes géothermiques uniques.
+                    </p>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer>
@@ -40,9 +178,9 @@
             <nav class="footer-nav">
                 <span>Explorer</span>
                 <ul class="footer-nav-list">
-                    <li class="footer-nav-elmt"><a href="./index.html">Acceuil</a></li>
-                    <li class="footer-nav-elmt"><a href="./pages/contact.html">Gallerie</a></li>
-                    <li class="footer-nav-elmt"><a href="./pages/galery.html">Me contacter</a></li>
+                    <li class="footer-nav-elmt"><a href="../index.html">Acceuil</a></li>
+                    <li class="footer-nav-elmt"><a href="./contact.html">Gallerie</a></li>
+                    <li class="footer-nav-elmt"><a href="./galery.html">Me contacter</a></li>
                 </ul>
             </nav>
             <nav class="footer-social_media">
@@ -51,7 +189,7 @@
                     <li class="social-elmt"><a href="https://www.facebook.com/"><img src="" alt="" /></a></li>
                     <li class="social-elmt"><a href="https://twitter.com/"><img src="" alt="" /></a></li>
                     <li class="social-elmt"><a href="https://www.instagram.com/"><img src="" alt="" /></a></li>
-                    <li class="social-elmt"><a href="pinhttps://www.pinterest.fr/"><img src="" alt="" /></a></li>
+                    <li class="social-elmt"><a href="https://www.pinterest.fr/"><img src="" alt="" /></a></li>
                 </ul>
             </nav>
         </div>
