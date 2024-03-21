@@ -1,22 +1,10 @@
 let token = window.localStorage.getItem('tokenId')
-console.log(token)
-
-const slides = [
-  {
-    image: 'slide_1.jpg',
-    alt: 'Photo de barque dans un lac magnifique',
-  },
-  {
-    image: 'slide_2.jpg',
-    alt: "Photo d'un pont en bois",
-  },
-  {
-    image: 'slide_3.jpg',
-    alt: 'Photo de champ de fleur devant une montagne enneigé',
-  },
-]
-
 const loginBtn = document.querySelector('.login-btn')
+const headerBtn = document.querySelector('.header-btn')
+const navMenu = document.querySelector('nav ul')
+const sectionPresentation = document.getElementById('presentation-title')
+let appear = false
+
 
 if (token) {
   genererAdminElement()
@@ -25,25 +13,30 @@ if (token) {
 function genererAdminElement() {
   loginBtn.innerHTML = 'Logout'
 
+  // création bouton de modification
+    const presentationEdition = document.createElement('button')
+    presentationEdition.className ='btn-modif'
+    presentationEdition.innerHTML = `<i class="fa-solid fa-pen-to-square"></i> Modifier`
+    sectionPresentation.appendChild(presentationEdition)
+
   // deconnexion
-  loginBtn.addEventListener('click', function() {
-    window.localStorage.removeItem('tokenId');
-    window.location.href='../../pages/login.html'
+  loginBtn.addEventListener('click', function () {
+    window.localStorage.removeItem('tokenId')
+    window.location.href = '../../pages/login.html'
   })
 }
 
-/* Slider */
-function bannerSlide(index) {
-  document.querySelector(
-    '.banner-img'
-  ).src = `../../assets/image/slideshow/${slides[index].image}`
-  document.querySelector('.banner-img').setAttribute('alt', slides[index].alt)
-}
 
-function slideAuto() {
-  let i = 0
-  i = (i + 1) % slides.length
-  bannerSlide(i)
-}
-
-setInterval(slideAuto, 5000)
+// Gestion menu mobile
+headerBtn.addEventListener('click', function() {
+    
+  if (appear === false) {
+    navMenu.classList.remove('disappear')
+    navMenu.classList.add('appear')
+    appear = true
+  } else {
+    navMenu.classList.remove('appear')
+    navMenu.classList.add('disappear')
+    appear = false
+  }
+})

@@ -8,3 +8,14 @@ a {
   text-decoration: none;
   color: white;
 }
+
+/**** bouton modification ****/
+
+.btn-modif {
+  border: none;
+	font-size: 14px;
+	background: #FFFFFF;
+  color: black;
+  margin: 0;
+  height: auto;
+}

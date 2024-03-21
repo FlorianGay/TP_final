@@ -20,23 +20,31 @@
       src="https://kit.fontawesome.com/bcde960bd7.js"
       crossorigin="anonymous"
     ></script>
-    <!-- script -->
+
     <title>Sofia Rodriguez | Globe-trotteuse</title>
   </head>
   <body>
     <header>
-      <div class="header-title">
-        <h1>Sofia Rodriguez</h1>
-      </div>
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li class="nav-elmt"><a href="../index.html">Accueil</a></li>
-          <li class="nav-elmt"><a href="./galery.html">Gallerie</a></li>
-          <li class="nav-elmt"><a href="./contact.html">Me contacter</a></li>
-          <li class="nav-elmt login-btn"><a href="./login.html">Login</a></li>
-        </ul>
-      </nav>
-    </header>
+
+        <div class="header-contain">
+          <div class="header-title">
+          <h1>Sofia Rodriguez</h1>
+        </div>
+        <nav class="header-nav">
+          <button class="header-btn"><i class="fa-solid fa-bars"></i></button>
+          <ul class="disappear">
+            <li class="nav-elmt"><a href="../index.html">Accueil</a></li>
+            <li class="nav-elmt"><a href="./galery.html">Gallerie</a></li>
+            <li class="nav-elmt">
+              <a href="./contact.html">Me contacter</a>
+            </li>
+            <li class="nav-elmt"><a href="./login.html" class="login-btn">Login</a></li>
+          </ul>
+        </nav>
+        </div>
+        
+      </header>
+
 
     <main>
       <section id="contact">
@@ -121,5 +129,7 @@
         >©2024 Florian & Florian, Tous droits réservés</span
       >
     </footer>
+    <script src="../assets/script/main.js"></script>
+
   </body>
 </html>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/header.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
@@ -25,11 +26,13 @@
   </head>
   <body>
     <header>
-      <div class="header-title">
+      <div class="header-contain">
+        <div class="header-title">
         <h1>Sofia Rodriguez</h1>
       </div>
       <nav class="header-nav">
-        <ul class="nav-list">
+        <button class="header-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul class="disappear">
           <li class="nav-elmt"><a href="./index.html">Accueil</a></li>
           <li class="nav-elmt"><a href="./pages/galery.html">Gallerie</a></li>
           <li class="nav-elmt">
@@ -38,6 +41,8 @@
           <li class="nav-elmt"><a href="./pages/login.html" class="login-btn">Login</a></li>
         </ul>
       </nav>
+      </div>
+      
     </header>
 
     <main>
@@ -52,7 +57,7 @@
       <section class="presentation">
         <img src="./assets/image/profile.jpg" alt="Photo de profile de Sofia" />
         <article>
-          <h2>A propos de moi</h2>
+          <h2 id="presentation-title">A propos de moi</h2>
           <p>
             Influenceuse passionnée de voyages et de découvertes. Avec ma
             personnalité pétillante et mon amour pour l'aventure, je partage
@@ -143,6 +148,8 @@
           </div>
         </article>
       </section>
+
+      
     </main>
 
     <footer>
@@ -201,5 +208,6 @@
 
     <!--Script -->
     <script src="./assets/script/main.js"></script>
+    <script src="./assets/script/slider.js"></script>
   </body>
 </html>

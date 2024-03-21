@@ -40,9 +40,22 @@ form input {
 	margin-top: 10px;
 }
 
+
 .error {
 	display: none;
 	font-size: 14px;
 	line-height: 16px;
 	color: red;
+}
+
+/**** mobile ****/
+
+@media screen and (max-width: 768px) {
+    form {
+        margin: 0;
+    }
+
+    form input {
+        width: auto;
+    }
 }
