@@ -1,6 +1,5 @@
 let token = window.localStorage.getItem('tokenId')
 console.log(token)
-/* Slider */
 
 const slides = [
   {
@@ -17,8 +16,23 @@ const slides = [
   },
 ]
 
-let i = 0
+const loginBtn = document.querySelector('.login-btn')
 
+if (token) {
+  genererAdminElement()
+}
+
+function genererAdminElement() {
+  loginBtn.innerHTML = 'Logout'
+
+  // deconnexion
+  loginBtn.addEventListener('click', function() {
+    window.localStorage.removeItem('tokenId');
+    window.location.href='../../pages/login.html'
+  })
+}
+
+/* Slider */
 function bannerSlide(index) {
   document.querySelector(
     '.banner-img'
@@ -27,6 +41,7 @@ function bannerSlide(index) {
 }
 
 function slideAuto() {
+  let i = 0
   i = (i + 1) % slides.length
   bannerSlide(i)
 }
