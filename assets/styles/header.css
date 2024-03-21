@@ -38,23 +38,24 @@ header {
 .nav-elmt {
   font-size: 20px;
   margin: 0;
-  padding: 20px;
+ 
   background-color: black;
   transition: all 0.5s ease-in-out;
 }
 
 .nav-elmt a {
   color: white;
+  padding: 20px;
   transition: all 0.5s ease-in-out;
 }
 
 .nav-elmt:hover {
-  background-color: white;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
 .nav-elmt:hover a {
+  background-color: white;
   color: black;
   transition: all 0.5s ease-in-out;
 }
