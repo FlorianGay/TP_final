@@ -149,7 +149,33 @@
         </article>
       </section>
 
-      
+      <section class="bloc-modal" style="display: none;">
+        <article class="modal-contain" style="display: none;">
+					<button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+          <h3>Modifier mes informations</h3>
+          <form class="modal-form">
+            <div class="message-container">
+              <label for="message">Ma présentation :</label>
+            <textarea type="text" id="message" rows="6" name="message"></textarea>
+            </div>
+
+            <div class="picture-container">
+              <div class="add-file">
+                <i class="fa-solid fa-image"></i>
+                <input type="file" id="picture" name="profile_picture" style="display : none;">
+                <label for="picture"> + Modifier ma photo</label>
+                <p>4 Mo max</p>
+              </div>
+
+              <div class="file-preview" style="display: none;">
+                <img class="preview" src="#" alt="Preview de l'image">
+              </div>
+            </div>
+
+            <button>Valider</button>
+          </form>
+        </article>
+      </section>
     </main>
 
     <footer>

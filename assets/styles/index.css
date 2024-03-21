@@ -109,6 +109,119 @@
   line-height: 20px;
 }
 
+/**** Modale ****/
+
+.bloc-modal {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-contain {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 105px 48px 105px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    width: 380px;
+}
+
+.modal-contain h3 {
+    font-size: 26px;
+    line-height: 30px;
+    color: black;
+}
+
+.close-modal {
+    border: none;
+    background-color: white;
+    align-self: end;
+    position: absolute;
+    right: 36px;
+    top: 26px;
+}
+
+.close-modal:hover {
+    cursor: pointer;
+}
+
+.fa-xmark {
+    color: black;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form label {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.modal-form textarea {
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+.add-file, .file-preview {
+    display: flex;
+    flex-direction: column;
+    background-color: #E8F1F7;
+    border-radius: 3px;
+    padding: 20px 124px;
+}
+
+.add-file label {
+    padding: 10px 33px;
+    background-color: #CBD6DC;
+    border-radius: 50px;
+    font-size: 14px;
+    margin: 21px 0 7px 0;
+}
+
+.add-file p {
+    font-size: 10px;
+    color: #444444;
+}
+
+.preview {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.file-preview {
+    display: none;
+}
+
+.modal-form button {
+    width: 40%;
+    align-self: center;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.modal-form button:hover {
+    cursor: pointer;
+}
 /**** Responsive mobile ****/
 
 @media screen and (max-width: 768px) {
@@ -173,6 +286,8 @@
     padding: 0 10px;
   }
 }
+
+/**** responsive tablette ****/
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .presentation {
