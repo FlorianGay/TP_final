@@ -40,9 +40,6 @@ form input {
 	margin-top: 10px;
 }
 
-form input:valid {
-	background-color: green;
-}
 
 .error {
 	display: none;

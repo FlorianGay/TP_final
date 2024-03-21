@@ -2,6 +2,7 @@ let token = window.localStorage.getItem('tokenId')
 const loginBtn = document.querySelector('.login-btn')
 const headerBtn = document.querySelector('.header-btn')
 const navMenu = document.querySelector('nav ul')
+const sectionPresentation = document.getElementById('presentation-title')
 let appear = false
 
 
@@ -12,6 +13,12 @@ if (token) {
 function genererAdminElement() {
   loginBtn.innerHTML = 'Logout'
 
+  // création bouton de modification
+    const presentationEdition = document.createElement('button')
+    presentationEdition.className ='btn-modif'
+    presentationEdition.innerHTML = `<i class="fa-solid fa-pen-to-square"></i> Modifier`
+    sectionPresentation.appendChild(presentationEdition)
+
   // deconnexion
   loginBtn.addEventListener('click', function () {
     window.localStorage.removeItem('tokenId')
@@ -21,10 +28,6 @@ function genererAdminElement() {
 
 
 // Gestion menu mobile
-function menuAppear() {
-  
-}
-
 headerBtn.addEventListener('click', function() {
     
   if (appear === false) {
