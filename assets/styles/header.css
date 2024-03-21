@@ -1,6 +1,14 @@
 /**** header ****/
 
 header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    max-width: 1920px;
+}
+
+.header-contain {
   display: flex;
   align-items: center;
   background-color: black;
@@ -18,12 +26,13 @@ header {
   margin-right: 250px;
 }
 
-.nav-list {
+
+
+.header-nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 .nav-elmt {
@@ -42,6 +51,7 @@ header {
 .nav-elmt:hover {
   background-color: white;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .nav-elmt:hover a {
@@ -49,25 +59,76 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
+.header-btn {
+    display: none;
+}
+
 /**** Responsive mobile ****/
 
 @media screen and (max-width: 768px) {
+
+  header {
+    position: static;
+  }
+
+
+  .header-contain {
+    height: auto;
+  }
   .header-title h1 {
     font-size: 16px;
     margin: 0;
+    padding: 15px;
   }
 
   .header-nav {
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  .nav-list {
-    gap: 10px;
+  .header-nav ul {
+    flex-direction: column;
+    background-color: black;
+  }
+
+  .header-btn  {
+    background: none;
+    border: none;
+    align-self: end;
+    display: flex;
+  }
+
+  .fa-bars {
+    color: white;
+    font-size: 16px;
+  }
+
+  .appear {
+    position: absolute;
+    z-index: 10;
+    height: 150px;
+    right: 0;
+    top: 45px;
+    padding: 10px;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .disappear {
+    position: absolute;
+    top: 45px;
+    height: 0;
+    overflow: hidden;
+    transform: translateX(100%);
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+    right: 0;
   }
 
   .nav-elmt {
     padding: 0;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 

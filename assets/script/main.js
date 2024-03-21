@@ -1,6 +1,8 @@
 let token = window.localStorage.getItem('tokenId')
-console.log(token)
-
+const loginBtn = document.querySelector('.login-btn')
+const headerBtn = document.querySelector('.header-btn')
+const navMenu = document.querySelector('nav ul')
+let appear = false
 const slides = [
   {
     image: 'slide_1.jpg',
@@ -16,8 +18,6 @@ const slides = [
   },
 ]
 
-const loginBtn = document.querySelector('.login-btn')
-
 if (token) {
   genererAdminElement()
 }
@@ -26,9 +26,9 @@ function genererAdminElement() {
   loginBtn.innerHTML = 'Logout'
 
   // deconnexion
-  loginBtn.addEventListener('click', function() {
-    window.localStorage.removeItem('tokenId');
-    window.location.href='../../pages/login.html'
+  loginBtn.addEventListener('click', function () {
+    window.localStorage.removeItem('tokenId')
+    window.location.href = '../../pages/login.html'
   })
 }
 
@@ -47,3 +47,21 @@ function slideAuto() {
 }
 
 setInterval(slideAuto, 5000)
+
+// Gestion menu mobile
+function menuAppear() {
+  
+}
+
+headerBtn.addEventListener('click', function() {
+    
+  if (appear === false) {
+    navMenu.classList.remove('disappear')
+    navMenu.classList.add('appear')
+    appear = true
+  } else {
+    navMenu.classList.remove('appear')
+    navMenu.classList.add('disappear')
+    appear = false
+  }
+})
