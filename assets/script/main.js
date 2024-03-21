@@ -44,6 +44,7 @@ headerBtn.addEventListener('click', function () {
   }
 })
 
+
 // Modale
 const openModale = function () {
   sectionModal.style.display = null
@@ -91,3 +92,11 @@ addFileInput.addEventListener('change', function () {
 if (token) {
   genererAdminElement()
 }
+
+
+window.addEventListener("load", function(){
+  if(window.innerWidth > 758){
+    document.getElementsByTagName("main")[0].style.marginTop = document.getElementsByTagName("header")[0].offsetHeight+"px";
+  }
+});
+
