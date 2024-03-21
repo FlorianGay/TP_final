@@ -1,3 +1,5 @@
+let token = window.localStorage.getItem('tokenId')
+console.log(token)
 /* Slider */
 
 const slides = [
