@@ -24,8 +24,10 @@ body a{
 .presentation  {
     display: flex;
     width: 80%;
-    margin: 50px auto;
+    margin: 100px auto;
     gap: 50px;
+    border-bottom: 2px solid #495057;
+    padding-bottom: 15px;
 }
 
 .presentation img {
@@ -52,8 +54,7 @@ body a{
 /**** Last posts ****/
 
 .last_post {
-    
-    margin-bottom: 50px;
+    margin: 100px auto;
 }
 
 .last_post h2 {
