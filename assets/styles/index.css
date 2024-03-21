@@ -1,51 +1,196 @@
-body {
-    margin: 0 auto;
-    max-width: 1920px;
-    font-family: 'League Spartan', sans-serif;
-}
-
-body a{
-    text-decoration: none;
-    color: white;
-}
-
 /**** Banner ***/
 
 .banner-img {
-    width: 100%;
-    max-width: 1920px;
-    height: 100%;
-    max-height: 600px;
-    object-fit: cover;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  max-height: 600px;
+  object-fit: cover;
 }
 
 /**** presentation ****/
 
-.presentation  {
-    display: flex;
-    width: 80%;
-    margin: 50px auto;
-    gap: 50px;
+.presentation {
+  display: flex;
+  width: 80%;
+  margin: 100px auto;
+  gap: 50px;
+  border-bottom: 2px solid #495057;
+  padding-bottom: 15px;
 }
 
 .presentation img {
-    width: 100%;
-    max-width: 420px;
-    border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
 }
 
 .presentation article {
-    padding: 15px;
-    color: #495057;
+  padding: 15px;
+  color: #495057;
 }
 
 .presentation article h2 {
-    margin: 0 0 0 50px;
-    font-size: 35px;
+  margin: 0 0 0 50px;
+  font-size: 35px;
 }
 
 .presentation article p {
-    width: 70%;
-    font-size: 20px;
+  width: 70%;
+  font-size: 20px;
 }
 
+/**** Last posts ****/
+
+.last_post {
+  margin: 100px auto;
+}
+
+.last_post h2 {
+  text-align: center;
+  color: #495057;
+  font-size: 35px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 432px);
+  justify-content: center;
+  gap: 50px;
+}
+
+.gallery-card {
+  background-color: rgba(73, 80, 87, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.gallery-card figure {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  max-height: 280px;
+  border-radius: 10px;
+}
+
+.gallery-card img {
+  width: 100%;
+  object-fit: fill;
+  position: relative;
+  z-index: 1;
+}
+
+.post-date {
+  background-color: rgba(4, 4, 4, 0.6);
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 3px 6px;
+  border-end-start-radius: 0.5vw;
+  font-size: 14px;
+}
+
+.post-title {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 2px 14px;
+  font-size: 25px;
+}
+
+.gallery-card p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/**** Responsive mobile ****/
+
+@media screen and (max-width: 768px) {
+  .banner-img {
+    max-height: 225px;
+  }
+
+  .presentation {
+    margin: 0 auto;
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .presentation img {
+    max-width: 280px;
+  }
+
+  .presentation article {
+    padding: 0;
+    text-align: center;
+  }
+
+  .presentation article h2 {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .presentation article p {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .last_post {
+    margin: 0;
+  }
+
+  .last_post h2 {
+    font-size: 30px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .gallery-card {
+    padding: 0;
+    max-width: 300px;
+  }
+
+  .post-title {
+    font-size: 20px;
+    width: 91%;
+  }
+
+  .gallery-card p {
+    font-size: 14px;
+    line-height: normal;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .presentation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .presentation article p {
+    width: fit-content;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 350px);
+  }
+
+  .gallery-card img {
+    max-width: 350px;
+    max-height: 338px;
+  }
+}

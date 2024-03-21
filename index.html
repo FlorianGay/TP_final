@@ -1,12 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/header.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
     <!-- Police -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
     <!-- Icones -->
     <script
       src="https://kit.fontawesome.com/bcde960bd7.js"
@@ -30,9 +30,12 @@
       </div>
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="nav-elmt"><a href="">Acceuil</a></li>
-          <li class="nav-elmt"><a href="">Gallerie</a></li>
-          <li class="nav-elmt"><a href="">Me contacter</a></li>
+          <li class="nav-elmt"><a href="./index.html">Accueil</a></li>
+          <li class="nav-elmt"><a href="./pages/galery.html">Gallerie</a></li>
+          <li class="nav-elmt">
+            <a href="./pages/contact.html">Me contacter</a>
+          </li>
+          <li class="nav-elmt"><a href="./pages/login.html" class="login-btn">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -66,20 +69,78 @@
       <section class="last_post">
         <h2>Mes derniers posts :</h2>
         <article class="gallery">
-          <figure>
-            <img src="./assets/image/tour_effeil.jpg" alt="Photo de la tour eiffel" />
-            <span class="post-date">20-08-2019</span>
-            <span class="post-title">Tour Eiffel</span>
-            <figcaption>
+          <div class="gallery-card">
+            <figure>
+              <img
+                src="./assets/image/tour_effeil.jpg"
+                alt="Photo de la tour eiffel"
+              />
+              <figcaption>
+                <span class="post-date">20-08-2019</span>
+                <span class="post-title">Symbole emblématique de Paris</span>
+              </figcaption>
+            </figure>
+            <p>
               La Tour Eiffel est une célèbre tour de fer située à Paris, en
               France. Elle est l'un des monuments les plus visités au monde,
-              attirant des millions de touristes chaque année. Histoire du lieu
-              : Conçue par l'ingénieur Gustave Eiffel, la tour a été achevée en
-              1889 pour l'Exposition universelle de Paris. À l'époque, elle
-              était critiquée mais est devenue depuis un symbole emblématique de
-              Paris et de la France.
-            </figcaption>
-          </figure>
+              attirant des millions de touristes chaque année.
+            </p>
+          </div>
+
+          <div class="gallery-card">
+            <figure>
+              <img
+                src="./assets/image/new_york.jpg"
+                alt="Photo de la statue de la Liberté"
+              />
+              <figcaption>
+                <span class="post-date">05-10-2018</span>
+                <span class="post-title">Symbole de liberté</span>
+              </figcaption>
+            </figure>
+            <p>
+              La Statue de la Liberté est une sculpture monumentale située sur
+              l'île de Liberty Island, à New York. Elle a été un cadeau du
+              peuple français aux États-Unis en 1886.
+            </p>
+          </div>
+
+          <div class="gallery-card">
+            <figure>
+              <img
+                src="./assets/image/yellowstone.jpg"
+                alt="Photo d'un lac à Yellowstone"
+              />
+              <figcaption>
+                <span class="post-date">30-09-2016</span>
+                <span class="post-title">Merveilles naturelles</span>
+              </figcaption>
+            </figure>
+            <p>
+              Le parc national de Yellowstone est le premier parc national au
+              monde, situé principalement dans l'État américain du Wyoming. Il
+              est renommé pour ses geysers, ses sources chaudes, et sa faune
+              sauvage.
+            </p>
+          </div>
+
+          <div class="gallery-card">
+            <figure>
+              <img
+                src="./assets/image/muraille_chine.jpg"
+                alt="Photo de Grande muraille de Chine"
+              />
+              <figcaption>
+                <span class="post-date">10-04-2016</span>
+                <span class="post-title">Barrière protectrice millénaire</span>
+              </figcaption>
+            </figure>
+            <p>
+              La Grande Muraille de Chine est une série de fortifications
+              construites pour protéger les frontières nord de la Chine contre
+              les invasions des peuples nomades.
+            </p>
+          </div>
         </article>
       </section>
     </main>
@@ -102,9 +163,9 @@
         <nav class="footer-nav">
           <span>Explorer :</span>
           <ul>
-            <li><a href="./index.html">Acceuil</a></li>
-            <li><a href="./pages/contact.html">Gallerie</a></li>
-            <li><a href="./pages/galery.html">Me contacter</a></li>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./pages/galery.html">Gallerie</a></li>
+            <li><a href="./pages/contact.html">Me contacter</a></li>
           </ul>
         </nav>
         <nav class="footer-social_media">
