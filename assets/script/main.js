@@ -14,6 +14,12 @@ const btnModif = document.querySelector('.btn-modif')
 const addFileInput = document.getElementById('picture')
 let appear = false
 
+window.addEventListener("load", function(){
+  if(window.innerWidth > 758){
+    document.getElementsByTagName("main")[0].style.marginTop = document.getElementsByTagName("header")[0].offsetHeight+"px";
+  }
+});
+
 function genererAdminElement() {
   loginBtn.innerHTML = 'Logout'
 
@@ -94,9 +100,5 @@ if (token) {
 }
 
 
-window.addEventListener("load", function(){
-  if(window.innerWidth > 758){
-    document.getElementsByTagName("main")[0].style.marginTop = document.getElementsByTagName("header")[0].offsetHeight+"px";
-  }
-});
+
 
