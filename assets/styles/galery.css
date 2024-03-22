@@ -100,26 +100,30 @@ main {
   text-align: justify;
 }
 
-.topic-story {
-  display: none;
+.topic-story{
+    display:none;
 }
 
-#galery-modal {
-  display: none;
-  position: fixed;
-  z-index: 20;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+#galery-modal{
+    position: fixed;
+    z-index:20;
+    width: 0%;
+    height: 0%;
+    top:50%;
+    left:50%;
+    background-color: rgba(0,0,0, 0.6);
 }
 
-#galery-modal-img {
-  position: absolute;
-  z-index: 21;
-  top: 50%;
-  left: 50%;
+#galery-modal > nav{
+    visibility: hidden;
+}
+
+#galery-modal-img{
+    position:absolute;
+    z-index:21;
+    top:50%;
+    left:50%;
+    opacity: 0;
 }
 
 .galery-modal-nav {
