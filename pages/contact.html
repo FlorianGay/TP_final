@@ -57,7 +57,7 @@
           </p>
         </article>
         <article id="contact-form">
-          <form onsubmit="return false;">
+          <form class="contact-form">
             <label for="nom">Votre nom* :</label
             ><input type="text" name="nom" placeholder="Mr Bond" required />
             <label for="prenom">Votre prénom* :</label
@@ -95,9 +95,12 @@
               name="message"
               placeholder="Un petit message explicatif de votre demande. :)"
             ></textarea>
-            <button type="submit">Envoyer</button>
+            <button type="submit" value="contact" id="contact-submit">Envoyer</button>
           </form>
         </article>
+        <div class="validation-message">
+          <p style="display: none;"> "Votre message a été envoyé</p>
+        </div>
       </section>
     </main>
 
@@ -155,5 +158,6 @@
       >
     </footer>
     <script src="../assets/script/global.js"></script>
+    <script src="../assets/script/contact.js"></script>
   </body>
 </html>
