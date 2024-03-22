@@ -1,179 +1,183 @@
-#contact{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-    padding: 5vw 0;
+#contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5vw 0;
 }
 
-#contact > article{
-    width:40%;
+#contact > article {
+  width: 40%;
 }
 
-#contact-message > *{
-    margin:0;
+#contact-message > * {
+  margin: 0;
 }
 
-#contact-message h4{
-    font-size:2.4rem;
+#contact-message h4 {
+  font-size: 2.4rem;
 }
 
-#contact-message p{
-    margin-top:5vh;
-    font-size:1.5rem;
-    text-align: justify;
+#contact-message p {
+  margin-top: 5vh;
+  font-size: 1.5rem;
+  text-align: justify;
 }
 
-#contact-form{
-    display: flex;
+#contact-form {
+  display: flex;
 }
 
-#contact-form form{
-    display: flex;
-    flex-direction:column;
-    width:100%;
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-#contact-form form > label{
-    margin-bottom:1vh;
-    font-size: 1.2rem;
+#contact-form form > label {
+  margin-bottom: 1vh;
+  font-size: 1.2rem;
 }
 
-#contact-form form > input, #contact-form form > select, #contact-form form > textarea{
-    margin-bottom:2vh;
-    font-size: 1rem;
-    padding:0.8vh 0.5vw;
-    border-radius: 0.5vw;
-    border-style: none;
-    background-color: #efefef;
+#contact-form form > input,
+#contact-form form > select,
+#contact-form form > textarea {
+  margin-bottom: 2vh;
+  font-size: 1rem;
+  padding: 0.8vh 0.5vw;
+  border-radius: 0.5vw;
+  border-style: none;
+  background-color: #efefef;
 }
 
-#contact-form form > input:required, #contact-form form > select:valid{
-    border:solid 1px #0053bf;
+#contact-form form > input:required,
+#contact-form form > select:valid {
+  border: solid 1px #0053bf;
 }
 
-#contact-form form > input:valid, #contact-form form > select:valid{
-    border:solid 1px #00bf00;
+#contact-form form > input:valid,
+#contact-form form > select:valid {
+  border: solid 1px #00bf00;
 }
 
-
-
-#contact-form input[name="nom"]{
-    max-width:12vh;
+#contact-form input[name='nom'] {
+  max-width: 12vh;
 }
 
-#contact-form input[name="prenom"]{
-    max-width:18vh;
+#contact-form input[name='prenom'] {
+  max-width: 18vh;
 }
 
-#contact-form input[type="tel"]{
-    max-width:12vh;
+#contact-form input[type='tel'] {
+  max-width: 12vh;
 }
 
-#contact-form input[type="email"]{
-    max-width:34vh;
+#contact-form input[type='email'] {
+  max-width: 34vh;
 }
 
-#contact-form select[name="raison"]{
-    max-width:26vh;
+#contact-form select[name='raison'] {
+  max-width: 26vh;
 }
 
-#contact-form textarea[name="message"]{
-    min-height:20vh;
+#contact-form textarea[name='message'] {
+  min-height: 20vh;
 }
 
-#contact-form button[type="submit"]{
-    cursor:pointer;
-    padding:1.5vh 0.5vw;
-    color:#fff;
-    background-color: #000;
-    border: none;
-    border-radius: 0.5vw;
-    font-size:1.5rem
+#contact-form button[type='submit'] {
+  cursor: pointer;
+  padding: 1.5vh 0.5vw;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 1.5rem;
 }
 
 .validation-message p {
-    position: fixed;
-    top: 50%;
-    left: 40%;
-    background-color: black;
-    padding: 15px 20px;
-    color: white;
-    border-radius: 10px;
-    font-size: 28px;
-    z-index: 99;
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  background-color: black;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 10px;
+  font-size: 28px;
+  z-index: 99;
 }
 
 @media (max-width: 850px) {
+  #contact {
+    flex-direction: column;
+    padding: 8vh 10vw;
+  }
 
-    #contact{
-        flex-direction: column;
-        padding:8vh 10vw;
-    }
+  #contact > article {
+    width: 100%;
+  }
 
-    #contact > article {
-        width: 100%;
-    }
+  #contact-message h4 {
+    font-size: 2rem;
+  }
 
-    #contact-message h4{
-        font-size:2rem;
-    }
+  #contact-message p {
+    margin-top: 2vh;
+    font-size: 1.2rem;
+    text-align: left;
+  }
 
-    #contact-message p{
-        margin-top:2vh;
-        font-size: 1.2rem;
-        text-align:left;
-    }
-    
-    #contact-form{
-        margin-top:4vh;
-    }
-    
-    #contact-form form > label{
-        font-size: 1rem;
-    }
+  #contact-form {
+    margin-top: 4vh;
+  }
 
-    #contact #contact-form form > input, #contact #contact-form form > select, #contact #contact-form form > textarea{
-        max-width:100%;
-        font-size: 0.8rem;
-        padding: 0.8vh 1vw;
-        border-radius: 1vw;
-    }
+  #contact-form form > label {
+    font-size: 1rem;
+  }
 
-    #contact-form button[type="submit"]{
-        font-size:1rem;
-        border-radius: 1vw;
-    }
+  #contact #contact-form form > input,
+  #contact #contact-form form > select,
+  #contact #contact-form form > textarea {
+    max-width: 100%;
+    font-size: 0.8rem;
+    padding: 0.8vh 1vw;
+    border-radius: 1vw;
+  }
+
+  #contact-form button[type='submit'] {
+    font-size: 1rem;
+    border-radius: 1vw;
+  }
 }
 
 @media (max-width: 460px) {
+  #contact-message h4 {
+    font-size: 1.8rem;
+  }
 
-    #contact-message h4{
-        font-size:1.8rem;
-    }
+  #contact-message p {
+    font-size: 1rem;
+    text-align: left;
+  }
 
-    #contact-message p{
-        font-size: 1rem;
-        text-align:left;
-    }
-    
-    #contact-form{
-        margin-top:4vh;
-    }
-    
-    #contact-form form > label{
-        font-size: 0.9rem;
-    }
+  #contact-form {
+    margin-top: 4vh;
+  }
 
-    #contact #contact-form form > input, #contact #contact-form form > select, #contact #contact-form form > textarea{
-        max-width:100%;
-        font-size: 0.8rem;
-        padding: 0.8vh 1vw;
-        border-radius: 1vw;
-    }
+  #contact-form form > label {
+    font-size: 0.9rem;
+  }
 
-    #contact-form button[type="submit"]{
-        font-size:1rem;
-        border-radius: 1vw;
-    }
+  #contact #contact-form form > input,
+  #contact #contact-form form > select,
+  #contact #contact-form form > textarea {
+    max-width: 100%;
+    font-size: 0.8rem;
+    padding: 0.8vh 1vw;
+    border-radius: 1vw;
+  }
+
+  #contact-form button[type='submit'] {
+    font-size: 1rem;
+    border-radius: 1vw;
+  }
 }

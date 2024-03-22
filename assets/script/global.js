@@ -26,11 +26,11 @@ headerBtn.addEventListener('click', function () {
 })
 
 // deconnexion
-  loginBtn.addEventListener('click', function () {
-    window.localStorage.removeItem('tokenId')
-    window.location.href = '../../pages/login.html'
-    loginBtn.innerHTML = 'Login'
-  })
+loginBtn.addEventListener('click', function () {
+  window.localStorage.removeItem('tokenId')
+  window.location.href = '../../pages/login.html'
+  loginBtn.innerHTML = 'Login'
+})
 
 if (token) {
   loginBtn.innerHTML = 'Logout'
