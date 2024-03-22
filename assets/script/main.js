@@ -12,8 +12,13 @@ const addFileInput = document.getElementById('picture')
 const presentation = document.getElementById('presentation-description')
 const modifTextePresentation = document.getElementById('message')
 const presentationText = presentation.innerText
-
 let text = window.localStorage.getItem('presentationText')
+
+if (text == null) {
+  text = ''
+} else {
+  text = window.localStorage.getItem('presentationText')
+}
 
 function genererAdminElement() {
   // création bouton de modification
