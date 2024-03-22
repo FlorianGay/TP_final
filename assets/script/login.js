@@ -17,7 +17,7 @@ async function fetchLogin() {
   const password = document.querySelector('#password').value
 
   try {
-    const response = await fetch('../../data/login.json')
+    const response = await fetch('https://raw.githubusercontent.com/FlorianGay/TP_final/main/data/login.json')
     const data = await response.json()
     const user = data[0]
     console.log(user)
