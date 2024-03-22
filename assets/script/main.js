@@ -1,5 +1,4 @@
-let token = window.localStorage.getItem('tokenId')
-const loginBtn = document.querySelector('.login-btn')
+//let token = window.localStorage.getItem('tokenId')
 const sectionPresentation = document.getElementById('presentation-title')
 const btnCloseModal = document.querySelector('.close-modal')
 const sectionModal = document.querySelector('.modal-contain')
@@ -12,20 +11,12 @@ const btnModif = document.querySelector('.btn-modif')
 const addFileInput = document.getElementById('picture')
 
 function genererAdminElement() {
-  loginBtn.innerHTML = 'Logout'
-
   // création bouton de modification
   const presentationEdition = document.createElement('button')
   presentationEdition.className = 'btn-modif'
   presentationEdition.innerHTML = `<i class="fa-solid fa-pen-to-square"></i> Modifier`
   sectionPresentation.appendChild(presentationEdition)
   presentationEdition.addEventListener('click', openModale)
-
-  // deconnexion
-  loginBtn.addEventListener('click', function () {
-    window.localStorage.removeItem('tokenId')
-    window.location.href = '../../pages/login.html'
-  })
 }
 
 // Modale

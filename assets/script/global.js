@@ -1,5 +1,8 @@
 const headerBtn = document.querySelector('.header-btn')
 const navMenu = document.querySelector('nav ul')
+const loginBtn = document.querySelector('.login-btn')
+let token = window.localStorage.getItem('tokenId')
+
 let appear = false
 
 window.addEventListener('load', function () {
@@ -21,3 +24,12 @@ headerBtn.addEventListener('click', function () {
     appear = false
   }
 })
+
+// deconnexion
+  loginBtn.addEventListener('click', function () {
+    window.localStorage.removeItem('tokenId')
+    window.location.href = '../../pages/login.html'})
+
+if (token) {
+  loginBtn.innerHTML = 'Logout'
+}
