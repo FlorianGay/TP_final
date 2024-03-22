@@ -31,10 +31,14 @@ footer li {
   font-size: 18px;
   color: #e5e5e5;
   opacity: 0.5;
+}
+
+footer li a {
+  opacity: 0.5;
   transition: all 0.5s ease-in-out;
 }
 
-footer li:hover {
+footer li a:hover {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }

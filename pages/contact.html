@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/styles/header.css" />
     <link rel="stylesheet" href="../assets/styles/footer.css" />
@@ -25,9 +25,8 @@
   </head>
   <body>
     <header>
-
-        <div class="header-contain">
-          <div class="header-title">
+      <div class="header-contain">
+        <div class="header-title">
           <h1>Sofia Rodriguez</h1>
         </div>
         <nav class="header-nav">
@@ -38,24 +37,47 @@
             <li class="nav-elmt">
               <a href="./contact.html">Me contacter</a>
             </li>
-            <li class="nav-elmt"><a href="./login.html" class="login-btn">Login</a></li>
+            <li class="nav-elmt">
+              <a href="./login.html" class="login-btn">Login</a>
+            </li>
           </ul>
         </nav>
-        </div>
-      </header>
+      </div>
+    </header>
 
     <main>
       <section id="contact">
         <article id="contact-message">
           <h4>Pour une nouvelle destination !</h4>
-          <p>Si vous êtes office de tourisme, maitre d'hotel ou une personne souhaitant que je vienne découvrir sa région. Contactez moi ! Je serais ravis de découvrir un nouvel endroit à explorer.</p>
+          <p>
+            Si vous êtes office de tourisme, maitre d'hotel ou une personne
+            souhaitant que je vienne découvrir sa région. Contactez moi ! Je
+            serais ravis de découvrir un nouvel endroit à explorer.
+          </p>
         </article>
         <article id="contact-form">
           <form onsubmit="return false;">
-            <label for="nom">Votre nom* :</label><input type="text" name="nom" placeholder="Mr Bond" required />
-            <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" placeholder="James" required />
-            <label for="tel">Votre numéro de téléphone professionel* :</label><input type="tel" name="tel" minlength="10" maxlength="14" placeholder="06 00 00 00 00" required />
-            <label for="mail">Votre email* :</label><input type="email" name="mail" placeholder="exemple@my.com" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required />
+            <label for="nom">Votre nom* :</label
+            ><input type="text" name="nom" placeholder="Mr Bond" required />
+            <label for="prenom">Votre prénom* :</label
+            ><input type="text" name="prenom" placeholder="James" required />
+            <label for="tel">Votre numéro de téléphone professionel* :</label
+            ><input
+              type="tel"
+              name="tel"
+              minlength="10"
+              maxlength="14"
+              placeholder="06 00 00 00 00"
+              required
+            />
+            <label for="mail">Votre email* :</label
+            ><input
+              type="email"
+              name="mail"
+              placeholder="exemple@my.com"
+              pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+              required
+            />
             <label for="raison">Raison* :</label>
             <select name="raison" required>
               <option value="" selected>-- choisissez une option --</option>
@@ -67,7 +89,11 @@
               <option value="caritatif">évènement caritatif</option>
               <option value="autre">autre (précisez dans le message)</option>
             </select>
-            <label for="message">Message :</label><textarea name="message" placeholder="Un petit message explicatif de votre demande. :)"></textarea>
+            <label for="message">Message :</label
+            ><textarea
+              name="message"
+              placeholder="Un petit message explicatif de votre demande. :)"
+            ></textarea>
             <button type="submit">Envoyer</button>
           </form>
         </article>
@@ -101,22 +127,22 @@
           <span>Mes réseaux :</span>
           <ul class="social-list">
             <li class="social-elmt">
-              <a href="https://www.facebook.com/"
+              <a href="https://www.facebook.com/" target="blank"
                 ><i class="fa-brands fa-facebook"></i
               ></a>
             </li>
             <li class="social-elmt">
-              <a href="https://twitter.com/"
+              <a href="https://twitter.com/" target="blank"
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </li>
             <li class="social-elmt">
-              <a href="https://www.instagram.com/"
+              <a href="https://www.instagram.com/" target="blank"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </li>
             <li class="social-elmt">
-              <a href="https://www.pinterest.fr/"
+              <a href="https://www.pinterest.fr/" target="blank"
                 ><i class="fa-brands fa-pinterest"></i
               ></a>
             </li>
@@ -127,6 +153,6 @@
         >©2024 Florian & Florian, Tous droits réservés</span
       >
     </footer>
-    <script src="../assets/script/main.js"></script>
+    <script src="../assets/script/global.js"></script>
   </body>
 </html>
