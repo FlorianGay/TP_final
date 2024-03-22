@@ -120,18 +120,21 @@ main {
 
 #galery-modal-img{
     position:absolute;
+    max-width: 80vw;
+    max-height: 80vh;
     z-index:21;
     top:50%;
     left:50%;
     opacity: 0;
 }
 
-.galery-modal-nav {
-  color: #fff;
-  cursor: pointer;
-  position: absolute;
-  z-index: 22;
-  font-size: 3rem;
+.galery-modal-nav{
+    color:#fff;
+    cursor:pointer;
+    position:absolute;
+    z-index: 22;
+    font-size: 3rem;
+    padding: 2vh 1vw;
 }
 
 .galery-modal-nav p {
