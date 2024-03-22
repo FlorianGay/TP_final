@@ -43,7 +43,6 @@ headerBtn.addEventListener('click', function() {
 
 
 window.addEventListener("load", function(){
-  console.log(); 
   if(window.innerWidth > 758){
     document.getElementsByTagName("main")[0].style.marginTop = document.getElementsByTagName("header")[0].offsetHeight+"px";
   }

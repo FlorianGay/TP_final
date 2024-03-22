@@ -181,7 +181,7 @@ main{
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 480px) {
     #title-galery{
         font-size: 1.8rem;;
     }
