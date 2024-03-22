@@ -1,11 +1,11 @@
 /**** header ****/
 
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
-    max-width: 1920px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  max-width: 1920px;
 }
 
 .header-contain {
@@ -26,8 +26,6 @@ header {
   margin-right: 250px;
 }
 
-
-
 .header-nav ul {
   display: flex;
   justify-content: space-between;
@@ -38,7 +36,7 @@ header {
 .nav-elmt {
   font-size: 20px;
   margin: 0;
- 
+
   background-color: black;
   transition: all 0.5s ease-in-out;
 }
@@ -61,17 +59,15 @@ header {
 }
 
 .header-btn {
-    display: none;
+  display: none;
 }
 
 /**** Responsive mobile ****/
 
 @media screen and (max-width: 768px) {
-
   header {
     position: static;
   }
-
 
   .header-contain {
     height: auto;
@@ -93,7 +89,7 @@ header {
     background-color: black;
   }
 
-  .header-btn  {
+  .header-btn {
     background: none;
     border: none;
     align-self: end;

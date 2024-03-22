@@ -42,7 +42,7 @@ form input {
 }
 
 form input:required {
-  border:solid 1px #0053bf;
+  border: solid 1px #0053bf;
 }
 
 form input:valid {
