@@ -9,6 +9,11 @@ const filePreviewContainer = document.querySelector('.file-preview')
 const filePreview = document.querySelector('.preview')
 const btnModif = document.querySelector('.btn-modif')
 const addFileInput = document.getElementById('picture')
+const presentation = document.getElementById('presentation-description')
+const modifTextePresentation = document.getElementById('message')
+const presentationText = presentation.innerText
+
+let text = window.localStorage.getItem('presentationText')
 
 function genererAdminElement() {
   // création bouton de modification
@@ -20,6 +25,9 @@ function genererAdminElement() {
 }
 
 // Modale
+presentation.innerText = `${text}`
+modifTextePresentation.innerText = `${text}`
+
 const openModale = function () {
   sectionModal.style.display = null
   modalContent.style.display = 'flex'
@@ -43,6 +51,20 @@ function cleanForm() {
   filePreviewContainer.style.display = null
   filePreview.setAttribute('src', '')
 }
+
+// Formulaire de modale
+
+function postModif() {
+  const text = modifTextePresentation.value
+  window.localStorage.setItem('presentationText', text)
+  location.reload()
+  console.log(text)
+}
+
+modifForm.addEventListener('submit', (event) => {
+  event.preventDefault()
+  postModif()
+})
 
 // Preview image ajouter
 addFileInput.addEventListener('change', function () {
