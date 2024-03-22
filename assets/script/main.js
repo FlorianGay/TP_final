@@ -1,7 +1,5 @@
 let token = window.localStorage.getItem('tokenId')
 const loginBtn = document.querySelector('.login-btn')
-const headerBtn = document.querySelector('.header-btn')
-const navMenu = document.querySelector('nav ul')
 const sectionPresentation = document.getElementById('presentation-title')
 const btnCloseModal = document.querySelector('.close-modal')
 const sectionModal = document.querySelector('.modal-contain')
@@ -12,13 +10,6 @@ const filePreviewContainer = document.querySelector('.file-preview')
 const filePreview = document.querySelector('.preview')
 const btnModif = document.querySelector('.btn-modif')
 const addFileInput = document.getElementById('picture')
-let appear = false
-
-window.addEventListener("load", function(){
-  if(window.innerWidth > 758){
-    document.getElementsByTagName("main")[0].style.marginTop = document.getElementsByTagName("header")[0].offsetHeight+"px";
-  }
-});
 
 function genererAdminElement() {
   loginBtn.innerHTML = 'Logout'
@@ -37,20 +28,6 @@ function genererAdminElement() {
   })
 }
 
-// Gestion menu mobile
-headerBtn.addEventListener('click', function () {
-  if (appear === false) {
-    navMenu.classList.remove('disappear')
-    navMenu.classList.add('appear')
-    appear = true
-  } else {
-    navMenu.classList.remove('appear')
-    navMenu.classList.add('disappear')
-    appear = false
-  }
-})
-
-
 // Modale
 const openModale = function () {
   sectionModal.style.display = null
@@ -65,7 +42,6 @@ const closeModale = function () {
   modalContent.style.background = 'rgba(0, 0, 0)'
   cleanForm()
   modal = null
-  
 }
 
 btnCloseModal.addEventListener('click', closeModale)
@@ -79,26 +55,22 @@ function cleanForm() {
 
 // Preview image ajouter
 addFileInput.addEventListener('change', function () {
-    const file = this.files[0];
-    if (file) {
-        const reader = new FileReader();
-        addFileContainer.style.display = 'none';
-        filePreviewContainer.style.display = 'block';
-        reader.addEventListener('load', function () {
-            filePreview.setAttribute('src', this.result);
-        });
-        reader.readAsDataURL(file);
-    } else {
-        addFileContainer.style.display = null;
-        filePreviewContainer.style.display = null;
-        filePreview.setAttribute('src', '');
-    }
-});
+  const file = this.files[0]
+  if (file) {
+    const reader = new FileReader()
+    addFileContainer.style.display = 'none'
+    filePreviewContainer.style.display = 'block'
+    reader.addEventListener('load', function () {
+      filePreview.setAttribute('src', this.result)
+    })
+    reader.readAsDataURL(file)
+  } else {
+    addFileContainer.style.display = null
+    filePreviewContainer.style.display = null
+    filePreview.setAttribute('src', '')
+  }
+})
 
 if (token) {
   genererAdminElement()
 }
-
-
-
-
