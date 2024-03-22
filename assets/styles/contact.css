@@ -48,9 +48,15 @@
     background-color: #efefef;
 }
 
+#contact-form form > input:required, #contact-form form > select:valid{
+    border:solid 1px #0053bf;
+}
+
 #contact-form form > input:valid, #contact-form form > select:valid{
     border:solid 1px #00bf00;
 }
+
+
 
 #contact-form input[name="nom"]{
     max-width:12vh;
@@ -84,6 +90,18 @@
     border: none;
     border-radius: 0.5vw;
     font-size:1.5rem
+}
+
+.validation-message p {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    background-color: black;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 28px;
+    z-index: 99;
 }
 
 @media (max-width: 850px) {
