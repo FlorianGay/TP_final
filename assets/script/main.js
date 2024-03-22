@@ -88,3 +88,7 @@ addFileInput.addEventListener('change', function () {
     filePreview.setAttribute('src', '')
   }
 })
+
+if (token) {
+  genererAdminElement()
+}
