@@ -48,9 +48,15 @@
     background-color: #efefef;
 }
 
+#contact-form form > input:required, #contact-form form > select:valid{
+    border:solid 1px #0053bf;
+}
+
 #contact-form form > input:valid, #contact-form form > select:valid{
     border:solid 1px #00bf00;
 }
+
+
 
 #contact-form input[name="nom"]{
     max-width:12vh;
