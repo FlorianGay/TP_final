@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/header.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
@@ -28,21 +28,22 @@
     <header>
       <div class="header-contain">
         <div class="header-title">
-        <h1>Sofia Rodriguez</h1>
+          <h1>Sofia Rodriguez</h1>
+        </div>
+        <nav class="header-nav">
+          <button class="header-btn"><i class="fa-solid fa-bars"></i></button>
+          <ul class="disappear">
+            <li class="nav-elmt"><a href="./index.html">Accueil</a></li>
+            <li class="nav-elmt"><a href="./pages/galery.html">Gallerie</a></li>
+            <li class="nav-elmt">
+              <a href="./pages/contact.html">Me contacter</a>
+            </li>
+            <li class="nav-elmt">
+              <a href="./pages/login.html" class="login-btn">Login</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header-nav">
-        <button class="header-btn"><i class="fa-solid fa-bars"></i></button>
-        <ul class="disappear">
-          <li class="nav-elmt"><a href="./index.html">Accueil</a></li>
-          <li class="nav-elmt"><a href="./pages/galery.html">Gallerie</a></li>
-          <li class="nav-elmt">
-            <a href="./pages/contact.html">Me contacter</a>
-          </li>
-          <li class="nav-elmt"><a href="./pages/login.html" class="login-btn">Login</a></li>
-        </ul>
-      </nav>
-      </div>
-      
     </header>
 
     <main>
@@ -149,7 +150,43 @@
         </article>
       </section>
 
-      
+      <section class="bloc-modal" style="display: none">
+        <article class="modal-contain" style="display: none">
+          <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+          <h3>Modifier mes informations</h3>
+          <form class="modal-form">
+            <div class="message-container">
+              <label for="message">Ma présentation :</label>
+              <textarea
+                type="text"
+                id="message"
+                rows="6"
+                name="message"
+              ></textarea>
+            </div>
+
+            <div class="picture-container">
+              <div class="add-file">
+                <i class="fa-solid fa-image"></i>
+                <input
+                  type="file"
+                  id="picture"
+                  name="profile_picture"
+                  style="display: none"
+                />
+                <label for="picture"> + Modifier ma photo</label>
+                <p>4 Mo max</p>
+              </div>
+
+              <div class="file-preview" style="display: none">
+                <img class="preview" src="#" alt="Preview de l'image" />
+              </div>
+            </div>
+
+            <button>Valider</button>
+          </form>
+        </article>
+      </section>
     </main>
 
     <footer>
@@ -179,22 +216,22 @@
           <span>Mes réseaux :</span>
           <ul class="social-list">
             <li class="social-elmt">
-              <a href="https://www.facebook.com/"
+              <a href="https://www.facebook.com/" target="blank"
                 ><i class="fa-brands fa-facebook"></i
               ></a>
             </li>
             <li class="social-elmt">
-              <a href="https://twitter.com/"
+              <a href="https://twitter.com/" target="blank"
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </li>
             <li class="social-elmt">
-              <a href="https://www.instagram.com/"
+              <a href="https://www.instagram.com/" target="blank"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </li>
             <li class="social-elmt">
-              <a href="https://www.pinterest.fr/"
+              <a href="https://www.pinterest.fr/" target="blank"
                 ><i class="fa-brands fa-pinterest"></i
               ></a>
             </li>
@@ -207,7 +244,8 @@
     </footer>
 
     <!--Script -->
-    <script src="./assets/script/main.js"></script>
     <script src="./assets/script/slider.js"></script>
+    <script src="./assets/script/global.js"></script>
+    <script src="./assets/script/main.js"></script>
   </body>
 </html>
