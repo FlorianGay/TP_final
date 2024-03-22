@@ -41,6 +41,10 @@ form input {
   border-radius: 15px;
 }
 
+form input:required {
+  border:solid 1px #0053bf;
+}
+
 form input:valid {
   border: solid 1px #00bf00;
 }

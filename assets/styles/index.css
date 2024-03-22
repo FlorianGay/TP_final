@@ -285,6 +285,25 @@
     line-height: normal;
     padding: 0 10px;
   }
+
+  .modal-contain {
+    padding: 10px 5px;
+    width: 300px;
+  }
+
+  .close-modal {
+    top: 5px;
+    right: 5px;
+  }
+
+  .modal-contain h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .add-file, flie-preview {
+    padding: 10px 20px;
+  }
 }
 
 /**** responsive tablette ****/
