@@ -26,13 +26,13 @@ async function fetchLogin() {
     if (user.email === mail && user.password === password) {
       const token = genererToken()
       window.localStorage.setItem('tokenId', token)
-      window.location.href = '../../index.html'
+      window.location.href = '/index.html'
     } else {
       const errorMessage = document.querySelector('.error')
       errorMessage.style.display = 'flex'
     }
   } catch (error) {
-    console.log(error)
+    console.error(error)
   }
 }
 
