@@ -32,9 +32,6 @@ Tp final du module ORGA 2 de la formation développeur web Full Stack de la 3WA
     - Créez une barre de navigation "sticky" qui reste en haut de la page lors du défilement.
 
 
-**⚠️ Fautes graves ⚠️:**
-
-- Pas de repository Git
-- Un seul commit
-- Un binôme n'a pas participé (0 commit)
-- Score Lighthouse inférieur à 75 dans une catégorie
+Identifiant pour login : 
+    "email": "sofia.rodriguez@email.fr",
+    "password": "password123"
